@@ -1,0 +1,515 @@
+.home-hero {
+    height: 90vh;
+    /* height: 650px; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.home-hero.about {
+    background-image: url(/img/hero\ home.jpg);
+}
+
+.home-hero.ourWork {
+    background-image: url(/img/lissete-laverde-hha7-lfXZe0-unsplash.jpg);
+}
+
+.video-container {
+    position: relative;
+    object-fit: cover;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.nav-link {
+    color: rgb(84, 84, 84);
+    border-radius: 2mm;
+    transition: 0.5s;
+    width: fit-content;
+    border-radius: 3mm;
+    padding: 5px;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: rgb(171, 143, 69);
+    border-radius: 3mm;
+    transition: 0.5s;
+}
+
+.nav-link:active {
+    color: white;
+    background-color: rgb(84, 84, 84);
+    transition: 0.2s;
+}
+
+.text-main {
+    color: rgb(171, 143, 69);
+}
+
+.text-sub {
+    color: rgb(84, 84, 84);
+}
+
+.text-white {
+    color: white;
+}
+
+.bg-main {
+    background-color: rgb(171, 143, 69);
+}
+
+.bg-sub {
+    background-color: rgb(84, 84, 84);
+}
+
+.bg-dark-grey {
+    background-color: rgb(37, 37, 37);
+}
+
+.logo-bg {
+    background-image: url(/img/Logo\ 3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.965);
+    background-blend-mode: overlay;
+    width: 100%;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: rotateX(270deg);
+        color: black;
+        opacity: 0;
+        /* transform: translateX(1000px); */
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: rotateX(360deg);
+        color: white;
+        /* transform: translateX(0px); */
+    }
+}
+
+.fadeInEntry {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes swipeUp {
+    from {
+        transform: translateY(1000px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.swipeUpAnimation {
+    animation: swipeUp 1.2s 1 forwards;
+}
+
+@keyframes fadeInBg {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+        height: 100%;
+        width: 100%;
+        /* transform: translateX(1000px); */
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.459);
+        height: 100%;
+        width: 100%;
+        /* transform: translateX(0px); */
+    }
+}
+
+.heading-bg {
+    animation: fadeInBg 1.5s 1s 1 forwards;
+}
+
+@keyframes swipeLeft {
+    from {
+        color: black;
+        opacity: 0;
+        transform: translateX(1000px);
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        color: white;
+        transform: translateX(0px);
+    }
+}
+
+.swipeLeftAnimation {
+    animation-name: swipeLeft;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes swipeRight {
+    from {
+        color: black;
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        color: white;
+        transform: translateX(0px);
+    }
+}
+
+.swipeRightAnimation {
+    animation-name: swipeRight;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes swipeDiagonalLeftTop {
+    from {
+        color: black;
+        opacity: 0;
+        transform: translate(-1000px, -1000px);
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        color: white;
+        transform: translate(0px, 0px);
+    }
+}
+
+.swipeDiagonalLeftTopAnimation {
+    animation-name: swipeDiagonalLeftTop;
+    animation-duration: 1.7s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes swipeDiagonalRightTop {
+    from {
+        color: black;
+        opacity: 0;
+        transform: translate(1000px, -1000px);
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        color: white;
+        transform: translate(0px, 0px);
+    }
+}
+
+.swipeDiagonalRightTopAnimation {
+    animation-name: swipeDiagonalRightTop;
+    animation-duration: 1.7s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.btn-primary {
+    background-color: rgb(171, 143, 69);
+    border-color: rgb(171, 143, 69);
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: rgb(84, 84, 84);
+    border-color: rgb(84, 84, 84);
+}
+
+.btn-primary:active {
+    background-color: rgb(68, 68, 68) !important;
+    border-color: rgb(68, 68, 68) !important;
+}
+
+.btn-secondary {
+    background-color: rgb(84, 84, 84);
+    border-color: rgb(84, 84, 84);
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: rgb(171, 143, 69);
+    border-color: rgb(171, 143, 69);
+}
+
+.btn-secondary:active {
+    background-color: rgb(141, 115, 45) !important;
+    border-color: rgb(141, 115, 45) !important;
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-outline-primary:hover {
+    background-color: rgb(171, 143, 69);
+    border-color: rgb(171, 143, 69);
+    transition: 0.3s;
+    color: white;
+}
+
+.btn-outline-primary:active {
+    background-color: rgb(141, 115, 45) !important;
+    border-color: rgb(141, 115, 45) !important;
+    color: white !important;
+}
+
+/* bounce effect ↓ */
+
+.bounce-effect {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.bounce-effect-revert {
+    transform: translateY(0px);
+    transition: 0.3s;
+}
+
+/* fade in left ↓ */
+
+.appear-on-scroll-left {
+    opacity: 0;
+    transform: translateX(200px);
+}
+
+.appear-on-scroll-left.fade-in-left {
+    transition: 1s;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.appear-on-scroll-left.fade-out-left {
+    transition: 1s;
+    opacity: 0;
+    transform: translateX(200px);
+}
+
+/* fade in right ↓ */
+
+.appear-on-scroll-right {
+    opacity: 0;
+    transform: translateX(-200px);
+}
+
+.appear-on-scroll-right.fade-in-right {
+    transition: 1s;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.appear-on-scroll-right.fade-out-right {
+    transition: 1s;
+    opacity: 0;
+    transform: translateX(-200px);
+}
+
+/* spin and scale ↓ */
+
+.spin-on-scroll {
+    opacity: 0;
+    scale: 0;
+    transform: rotate(180deg);
+}
+
+.spin-on-scroll.entry {
+    transition: 1s;
+    opacity: 1;
+    scale: 1;
+    transform: rotate(360deg);
+}
+
+.spin-on-scroll.exit {
+    transition: 0.5s;
+    opacity: 0;
+    transform: rotate(180deg);
+}
+
+/* slide up ↓ */
+
+.slide-up-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.slide-up-on-scroll.entry {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.slide-up-on-scroll.exit {
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* fold down */
+
+@keyframes fadeInFold {
+    from {
+        transform: rotateX(270deg);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: rotateX(360deg);
+    }
+}
+
+.fold-down.entry {
+    animation-name: fadeInFold;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.imageTile {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.imageTile.leftPic {
+    background-image: url(/img/hex\ drawers.jpg);
+}
+
+.imageTile.midPic {
+    background-image: url(/img/desk.jpg);
+}
+
+.imageTile.rightPic {
+    background-image: url(/img/kitchen.jpg);
+}
+
+#socials {
+    height: 35px;
+}
+
+#socials a {
+    height: 100%;
+    transition: 0.25s;
+}
+
+#socials a:hover {
+    transition: 0.25s;
+    transform: translateY(-5px);
+}
+
+footer .nav-item a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+    padding: 3px;
+    border-radius: 2mm;
+}
+
+footer .nav-item a:hover {
+    background-color: rgb(171, 143, 69);
+    transition: 0.2s;  
+}
+
+footer h6 {
+    padding-left: 3px;
+}
+
+.bg-outline {
+    background-color: transparent;
+    border: solid 1.5px white;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.ourWorkBanners {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    background-attachment: fixed;
+}
+
+.ourWorkBanners.kitchen {
+    background-image: url(/img/kitchen.jpg)
+}
+
+.ourWorkBanners.bathroom {
+    background-image: url(/img/Corian\ sink.jpg)
+}
+
+.ourWorkBanners.commercial {
+    background-image: url(/img/frames-for-your-heart-zSG-kd-L6vw-unsplash.jpg)
+}
+
+.floater {
+    top: 50px;
+    margin-left: 50px;
+    position: sticky;
+    height: 0;
+}
+
+.float {
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 10px;  
+}
+
+.float.entry {
+    background-color: rgba(0, 0, 0, 0.404);
+    transition: 2s;
+}
+
+.float.exit {
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}
